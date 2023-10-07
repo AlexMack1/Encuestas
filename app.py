@@ -8,7 +8,7 @@ st.title("Aplicación para Capturar Respuestas de Encuestas")
 st.write("Por favor, sube un archivo Excel para capturar las respuestas.")
 
 # Subida de archivos
-uploaded_file = st.file_uploader("Elige un archivo Excel", type="xlsx")
+uploaded_file = st.file_uploader("respuestas", type="xlsx")
 
 if uploaded_file:
     try:
