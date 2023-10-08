@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import gspread
 
+
 # Conectar con Google Sheets
 gc = gspread.oauth()
 sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1HUMU06Y3jvmfxYxjta0QstvGlkXMXSnfw0Y2oAHwqCY/edit?usp=sharing")
