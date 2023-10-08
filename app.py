@@ -3,7 +3,7 @@ import pandas as pd
 import gspread
 
 # Conectar con Google Sheets
-gc = gspread.service_account(filename=None)
+gc = gspread.oauth()
 sh = gc.open_by_url("https://docs.google.com/spreadsheets/d/1HUMU06Y3jvmfxYxjta0QstvGlkXMXSnfw0Y2oAHwqCY/edit?usp=sharing")
 worksheet = sh.get_worksheet(0)
 
